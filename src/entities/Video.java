@@ -30,9 +30,10 @@ public class Video extends Lesson {
         this.seconds = seconds;
     }
 
+    //A duração (em segundos) de uma aula vídeo é a própria duração do vídeo
     @Override
     public int duration() {
-        
+       return getSeconds();
     }
 
 }

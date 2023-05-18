@@ -31,10 +31,10 @@ public class Task extends Lesson {
         this.questionCount = questionCount;
     }
 
+    //duração de uma aula tarefa é de cinco minutos(em segundos)
     @Override
     public int duration() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'duration'");
+       return (getQuestionCount() * 5) * 60;
     }
 
 }
